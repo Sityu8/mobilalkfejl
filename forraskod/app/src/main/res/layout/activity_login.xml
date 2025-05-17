@@ -5,8 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3F3"
+    android:background="#FFFFFF"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="421dp"
+        android:layout_height="357dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Bejelentkezési logó"
+        android:src="@drawable/logo_login"
+        app:layout_constraintBottom_toTopOf="@id/loginPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/loginPanel"
@@ -48,6 +60,14 @@
                 android:textColor="#000"
                 android:textColorHint="#BDBDBD"
                 android:layout_marginTop="12dp"/>
+
+            <CheckBox
+                android:id="@+id/rememberPasswordCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" android:layout_marginTop="8dp" android:text="Jelszó megjegyzése"
+                android:textColor="#000000"
+                app:buttonTint="#E53935" />
 
             <Button
                 android:id="@+id/loginButton"

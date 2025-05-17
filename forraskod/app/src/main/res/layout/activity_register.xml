@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3F3"
+    android:background="#FFFFFF"
     tools:context=".RegisterActivity">
 
     <androidx.cardview.widget.CardView
